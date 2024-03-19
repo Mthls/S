@@ -1,4 +1,4 @@
 <?php
-$nome = $_POST["nome"];
+$nome = $_GET["nome"];
 echo "Olá $nome!";
 ?>
