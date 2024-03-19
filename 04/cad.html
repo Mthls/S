@@ -10,6 +10,7 @@
     }
   </style>
   <body>
+	  <div class="a">
     <form method='POST' action='recebe-dados.php'>
 	    <label for="nome">Nome</label>
 	    <input type='text' id='nome' name='nome' required>
@@ -31,11 +32,6 @@
 	    <label for="cor">Cor favorita</label>
 	    <input type='color' id='cor' name='cor'>
 	    <br>
-	    <label for="filhos">Qtde Filhos</label>
-	    <input type='number' id='filhos' name='filhos'>
-	    <label for="peso">Peso</label>
-	    0<input type="range" id="peso" name="peso" min="0" max="200">200
-	    <br>
 	    <p>Sexo:</p>
 	    <input type="radio" id="sexo-m" name="sexo" value="Masculino">
     	<label for="sexo-m">Masculino</label><br>
@@ -55,5 +51,6 @@
 	    <input type="reset" value="Reset">
 	    <input type="submit" value="Enviar">
     </form>
+	  </div>
   </body>
 </html>
