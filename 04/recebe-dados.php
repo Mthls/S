@@ -1,4 +1,4 @@
 <?php
-echo "Olá " . $_POST["nome"] . " (email: " . $_POST["email"] . ")<br><br>";
-echo "Sua mensagem: " . $_POST["mensagem"];
+$nome = $_POST["nome"];
+echo "Olá $nome!";
 ?>
