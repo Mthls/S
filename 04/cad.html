@@ -2,7 +2,7 @@
 <html>
   <head>
 	  <title>
-		  cadastro
+		  Cadastro
 	  </title>
   </head>
   <style>
@@ -13,48 +13,52 @@
   </style>
   <body>
 	  <div class="a">
-		  <h6>Cadastro</h6>
-    <form method='POST' action="recebe_dados.php">
-	    <label for="nome">Nome</label>
-	    <input type='text' id='nome' name='nome' required>
-	    <br>
-	    <label for="email">Email</label>
-	    <input type='email' id='email' name='email' required>
-	    <br>
-	    <label for="fone">fone</label>
-	    <input type="tel" id="fone" name="fone" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="86 999999999">
-	    <br>
-	    <label for="senha">Senha</label>
-	    <input type="password" id="senha" name="senha">
-	    <br>
-	    <label for="dtnasc">Data Nasc</label>
-	    <input type='date' id='dtnasc' name='dtnasc'>
-	    <br>
-	    <label for="S">Sexo:</label>
-	    <select id="sexo" name="sexo">
-		<option value="Fe">Feminino</option>
-	    	<option value="Masc">Masculino</option>
-	    <br>
-	    <label for="estado">Estado</label><br>
-	    <select id="estado" name="estado">
-	    	<option value="SP">CE</option>
-	    	<option value="RJ">SP</option>
-	    	<option value="PB">PI</option>
-		</select>
-	    <br>
-	    <label for="Interesses">Interesses: </label><br>
-	    <select id="interesse" name="inter">
-		<option value="Po">Politica</option>
-	    	<option value="Fu">Futebol</option>
-		<option value="Ed">Educação</option>
-		<option value="Nu">Nutrição</option>
-		<br>
-		<label for="msg">Mensagem</label><br>
-		    <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
-		    <br>
-		    <input type="reset" value="Reset">
-		    <input type="submit" value="Enviar">
-    </form>
+		  <form method='POST' action="recebe_dados.php">
+			  <tr>
+				  <td>
+					  <label for="nome">Nome</label>
+					  <input type='text' id='nome' name='nome' required>
+				  </td>
+				  <td>
+					  <label for="email">Email</label>
+					  <input type='email' id='email' name='email' required>
+				  </td>
+				  <td>
+					  <label for="fone">fone</label>
+					  <input type="tel" id="fone" name="fone" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="(DDD)987654321">
+				  </td>
+				  <td>
+					  <label for="senha">Senha</label>
+					  <input type="password" id="senha" name="senha">
+				  </td>
+				  <td>
+					  <label for="dtnasc">Data Nasc</label>
+					  <input type='date' id='dtnasc' name='dtnasc'>
+				  </td>
+				  <td>
+					  <label for="S">Sexo:</label>
+					  <select id="sexo" name="sexo">
+						  <option value="Fe">Feminino</option>
+						  <option value="Masc">Masculino</option>
+				  </td>
+				  <td>
+					  <label for="estado">Estado</label><br>
+					  <select id="estado" name="estado">
+						  <option value="PI">PI</option>
+						  <option value="CE">CE</option>
+						  <option value="MA">MA</option>
+					  </select>  
+				  </td>
+				  <td>
+					  <label for="Interesses">Interesses: </label>
+					  <select id="interesse" name="inter">
+						  <option value="Po">Politica</option>
+						  <option value="ecn">Economia</option>
+						  <option value="fut">Futebol</option>
+						  <option value="cel">Celebridade</option>
+					  </select>
+				  </td>
+			  </tr>
+		  </form>
 	  </div>
   </body>
-</html>
