@@ -1,63 +1,70 @@
 <!doctype html>
-
 <html>
-
 <head>
+    <title>BOX MODEL</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-<title>BOX MODEL</title>
-<meta charset="utf-8"/>
- <style type="text/css">
-    
-    .noticia {
-        font-family: "opensans-regular",arial,sans-serif;
-        background-color: #F5F5DC;
-        border: 1px solid black;
-        color: #333;
-        font-size: 16px;
-        padding-left: 15px;
-        padding-right: 10px;
-        text-align: justify;
-        line-height: 24px;
-        width: 500px;
-        margin: 20px;
-    }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
 
-    .noticia h1 {
-        color: #c4170c;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        margin: 8px
-    }
+        .noticia {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            color: #333;
+            font-size: 16px;
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
+        .noticia h1 {
+            color: #c4170c;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
 
- </style>
-
+        .noticia img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
-
 <body>
-
     <div class="container">
-
         <div class="noticia">
-        
+            <img src="path_to_image1.jpg" alt="Imagem da notícia 1">
             <h1>Título da Notícia</h1>
-
-            <p >
+            <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-        
         </div>
-        
+
         <div class="noticia">
-        
+            <img src="path_to_image2.jpg" alt="Imagem da notícia 2">
             <h1>Título da outra Notícia</h1>
-
-            <p >
+            <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-        
         </div>
-
     </div>
-
 </body>
 </html>
