@@ -10,26 +10,6 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .footer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%
-            background-color: red;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
         .container {
             margin-top: fixed; 
             display: flex;
@@ -40,31 +20,50 @@
             height: 130px;
             margin: 0px;
         }
-
+        .box {
+            background-color: blue;
+            margin: 0;
+            position: top;
+        }
         .box1 {
             background-color: coral;
+            margin: 0;
+            position: left;
         }
 
         .box2 {
             background-color: green;
+            margin: 0;
+            position: center
         }
 
         .box3 {
             background-color: pink;
+            margin: 0;
+            position: right;
         }
+        .box4 {
+            background-color: red;
+            margin: 0;
+            position: bottom;
     </style>
 </head>
 <body>
-    <div class="header">
-        Header
-    </div>
     <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-    </div>
-    <div class="footer">
-        Footer
-    </div>
+        <div class="box">
+            Header
+        </div>
+        <div class="box1">
+            Left
+        </div>
+        <div class="box2">
+            Center
+        </div>
+        <div class="box3">
+            Right
+        </div>
+        <div class="box4">
+            Footer
+        </div>
 </body>
 </html>
