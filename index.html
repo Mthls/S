@@ -29,7 +29,37 @@
             position: relative;
             overflow: hidden;
             transition: background-color 0.3s, transform 0.3s;
+        .scroll-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
         }
+
+        .animated-box {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            animation: moveOnScroll 5s linear infinite;
+        }
+
+        @keyframes moveOnScroll {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                transform: translateX(-50%) translateY(100vh);
+            }
+        }
+                }
 
         .button::before {
             content: '';
@@ -98,26 +128,28 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo à Página Inicial</h1>
-        <ul class="links">
-            <li><a href=01/Home.html class="button"><span>Atividade 1</span></a></li>
-            <li><a href=02/Tags.html class="button"><span>Atividade 2</span></a></li>
-            <li><a href=03/Tab.html class="button"><span>Atividade 3</span></a></li>
-            <li><a href=04/Log.html class="button"><span>Atividade 4</span></a></li>
-            <li><a href=05/index.html class="button"><span>Atividade 5</span></a></li>
-            <li><a href=06/index.html class="button"><span>Atividade 6</span></a></li>
-            <li><a href=07/index.html class="button"><span>Atividade 7</span></a></li>
-            <li><a href=08/index.html class="button"><span>Atividade 8</span></a></li>
-            <li><a href=09/index.html class="button"><span>Atividade 9</span></a></li>
-        </ul>
-        <div class="creators">
-            <p>Criado por:</p>
-            <p>Matheus</p>
-            <p>Enzo</p>
-            <p>Marcos</p>
-            <p>Jefferson</p>
-            <p>João Glênio</p>
+    <div class="scroll-container">
+        <div class="container">
+            <h1>Bem-vindo à Página Inicial</h1>
+            <ul class="links">
+                <li><a href=01/Home.html class="button"><span>Atividade 1</span></a></li>
+                <li><a href=02/Tags.html class="button"><span>Atividade 2</span></a></li>
+                <li><a href=03/Tab.html class="button"><span>Atividade 3</span></a></li>
+                <li><a href=04/Log.html class="button"><span>Atividade 4</span></a></li>
+                <li><a href=05/index.html class="button"><span>Atividade 5</span></a></li>
+                <li><a href=06/index.html class="button"><span>Atividade 6</span></a></li>
+                <li><a href=07/index.html class="button"><span>Atividade 7</span></a></li>
+                <li><a href=08/index.html class="button"><span>Atividade 8</span></a></li>
+                <li><a href=09/index.html class="button"><span>Atividade 9</span></a></li>
+            </ul>
+            <div class="creators">
+                <p>Criado por:</p>
+                <p>Matheus</p>
+                <p>Enzo</p>
+                <p>Marcos</p>
+                <p>Jefferson</p>
+                <p>João Glênio</p>
         </div>
+    </div>
 </body>
 </html>
