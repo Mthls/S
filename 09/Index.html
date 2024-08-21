@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Example</title>
+    <title>Layout com Divs</title>
     <style>
-
-        .container {
-            width: 300px;
-            height: 200px;
-            background-color: lightgray;
-			left:150px;
-            margin: 100px auto;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .box {
+        /* Header fixo no topo */
+        .header {
             position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Container principal para outras divs */
+        .container {
+            margin-top: 60px; /* Espaço para o header fixo */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Divs com cores diferentes */
+        .box {
             width: 100px;
             height: 100px;
-            background-color: lightgreen;
-            top: 50px;
-            left: 50px;
-			border:1px solid red;
+            margin: 10px;
+        }
+
+        .box1 {
+            background-color: coral;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .box3 {
+            background-color: pink;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        Header Fixo
+    </div>
+
     <div class="container">
-        <div class="box">
-            Este elemento é posicionado.
-        </div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
     </div>
 </body>
 </html>
