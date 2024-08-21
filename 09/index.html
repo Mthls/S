@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout com Divs</title>
+    <title>Layout</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
-
-        /* Header fixo no topo */
         .header {
             position: fixed;
             top: 0;
@@ -22,15 +20,20 @@
             padding: 10px;
             text-align: center;
         }
-
-        /* Container principal para outras divs */
-        .container {
-            margin-top: 60px; /* Espaço para o header fixo */
+        .container1 {
+            margin-left: fixed; 
+            display: flex;
+            flex-wrap: wrap;
+        .container2 {
+            margin-top: fixed;
             display: flex;
             flex-wrap: wrap;
         }
-
-        /* Divs com cores diferentes */
+        .container3 {
+            margin-right: fixed; 
+            display: flex;
+            flex-wrap: wrap;
+        }
         .box {
             width: 100px;
             height: 100px;
@@ -52,12 +55,16 @@
 </head>
 <body>
     <div class="header">
-        Header Fixo
+        Header
     </div>
 
-    <div class="container">
+    <div class="container1">
         <div class="box box1"></div>
+    </div>
+    <div class="container2">
         <div class="box box2"></div>
+    </div>
+    <div class="container3">
         <div class="box box3"></div>
     </div>
 </body>
