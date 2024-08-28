@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Roda de Cores e Flor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .color-wheel {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .color-wheel div {
+            width: 50%;
+            height: 50%;
+            box-sizing: border-box;
+        }
+        .color1 { background-color: red; }
+        .color2 { background-color: blue; }
+        .color3 { background-color: green; }
+        .color4 { background-color: yellow; }
+
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        .petal {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50% 50% 0 0;
+            box-sizing: border-box;
+        }
+        .petal1 { background-color: pink; transform: rotate(0deg); }
+        .petal2 { background-color: lightcoral; transform: rotate(90deg); }
+        .petal3 { background-color: lightgreen; transform: rotate(180deg); }
+        .petal4 { background-color: lightblue; transform: rotate(270deg); }
+
+        .petal:nth-child(1) { top: 0; left: 20px; }
+        .petal:nth-child(2) { top: 20px; left: 0; }
+        .petal:nth-child(3) { bottom: 0; right: 20px; }
+        .petal:nth-child(4) { top: 20px; right: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-wheel">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+        </div>
+        <div class="flower">
+            <div class="petal petal1"></div>
+            <div class="petal petal2"></div>
+            <div class="petal petal3"></div>
+            <div class="petal petal4"></div>
+        </div>
+    </div>
+</body>
+</html>
