@@ -1,51 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roda de Cores e Flor de Pétalas</title>
+    <title>Círculo Colorido</title>
     <style>
-        .box {
-            width: 180px;
-            height: 180px;
-            border-radius: 180px;
-        }
-        .box1 {
-            background: #FF0000;
-            width: 45px;
-            height: 45px;
-            border-radius: 45px;
-        }
-        .box2 {
-            background: #FFA500;
-            width: 90px;
-            height: 90px;
-            border-radius: 90px;
-        }
-        .box3 {
-            background: #A020F0;
-            width: 135px;
-            height: 135px;
-            border-radius: 135px;
-        }
-        .box4 {
-            background: #00FF00;
-            width: 180px;
-            height: 180px;
-            border-radius: 180px;
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                red 0% 25%,
+                green 25% 50%,
+                blue 50% 75%,
+                yellow 75% 100%
+            );
+            margin: 50px auto;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="box4"> 
-        </div>
-        <div class="box3">
-        </div>
-        <div class="box2">
-        </div>
-        <div class="box1">
-        </div>
-    </div>
+    <div class="circle"></div>
 </body>
 </html>
