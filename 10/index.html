@@ -5,71 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roda de Cores e Flor de Pétalas</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+        elemento {
+            border-radius: 180px;
         }
-        .container {
-            display: flex;
-            align-items: center;
+        .box {
+            background: #00FF00;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
         }
-        .color-wheel {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            display: flex;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-            border: 5px solid #000;
-        }
-        .color-wheel div {
-            width: 50%;
-            height: 50%;
-            box-sizing: border-box;
-        }
-        .color1 { background-color: red; }
-        .color2 { background-color: blue; }
-        .color3 { background-color: green; }
-        .color4 { background-color: yellow; }
-
-        .flower {
-            position: relative;
-            width: 100px;
-            height: 100px;
-        }
-        .petal {
-            position: absolute;
-            width: 60px;
-            height: 80px;
-            border-radius: 50% 50% 0 0;
-            background-color: transparent;
-            border: 10px solid;
-            border-top: none;
-            box-sizing: border-box;
-        }
-        .petal1 { border-color: pink transparent transparent transparent; transform: rotate(0deg); }
-        .petal2 { border-color: lightcoral transparent transparent transparent; transform: rotate(90deg); }
-        .petal3 { border-color: lightgreen transparent transparent transparent; transform: rotate(180deg); }
-        .petal4 { border-color: lightblue transparent transparent transparent; transform: rotate(270deg); }
-
-        .petal:nth-child(1) { top: 10px; left: 20px; }
-        .petal:nth-child(2) { top: 20px; left: 10px; }
-        .petal:nth-child(3) { bottom: 10px; left: 20px; }
-        .petal:nth-child(4) { top: 20px; right: 10px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="flower">
-            <div class="petal petal1"></div>
-            <div class="petal petal2"></div>
-            <div class="petal petal3"></div>
-            <div class="petal petal4"></div>
-        </div>
+    <div class="box">
+        <fieldset>
+        </fieldset>
     </div>
 </body>
 </html>
